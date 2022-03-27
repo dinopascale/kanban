@@ -1,0 +1,17 @@
+{
+  "name": "kanban",
+  "version": "1.0.0",
+  "description": "A simple kanban in pure vanillajs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "npx sass ./styles/styles.sass:styles.css -w"
+  },
+  "keywords": [
+    "kanban",
+    "vanilla-js",
+    "dashboard"
+  ],
+  "author": "Dino Pascale",
+  "license": "ISC"
+}
