@@ -12,20 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
     <title>Kanban</title>
   </head>
   <body id="vanilla-kanban">
     <header id="main-header">
       <h1 id="main-title">Vanilla Kanban</h1>
-      <button id="mode-switcher">Mode Switcher</button>
+      <button class="mode-switcher">Switch</button>
     </header>
     <nav id="main-navigation">
-      <span id="mobile-menu-trigger">Menu</span>
-      <ul class="nav-list">
-        <li class="nav-list__item">Nav #1</li>
-        <li class="nav-list__item">Nav #2</li>
-        <li class="nav-list__item">Nav #3</li>
-      </ul>
+      <span id="mobile-menu-trigger" class="menu-button">Menu</span>
+      <div class="nav-list-container">
+        <header class="nav-list-container__header">
+          <i
+            class="fa fa-times nav-list-container__header__close-icon"
+            aria-hidden="true"
+          ></i>
+        </header>
+        <ul class="nav-list">
+          <li class="nav-list__item account">
+            <img
+              class="account__image"
+              src="./static/images/account.png"
+              alt="account image"
+            />
+            <span class="account__user">Hi, Dino!</span>
+          </li>
+          <li class="nav-list__item">Nav #1</li>
+          <li class="nav-list__item">Nav #2</li>
+          <li class="nav-list__item">Nav #3</li>
+        </ul>
+        <button class="mode-switcher">Switch</button>
+      </div>
     </nav>
     <section id="main">Main Section</section>
     <footer id="main-footer">
