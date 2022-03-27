@@ -1,0 +1,15 @@
+@import './header'
+@import './navbar'
+@import './main'
+@import './footer'
+
+$mainHeaderHeight: 60px
+$mainNavHeight: 40px
+$mainFooterHeight: 40px
+
+#vanilla-kanban
+    width: 100vw
+    height: 100vh
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: $mainHeaderHeight $mainNavHeight auto $mainFooterHeight
